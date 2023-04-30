@@ -1,10 +1,10 @@
 import React from 'react';
 import Header from '../pages/Shared/Header/Header';
-import { Outlet } from 'react-router-dom';
+import { Outlet, ScrollRestoration } from 'react-router-dom';
 import Footer from '../pages/Shared/Footer/Footer';
 import { Col, Container, Row } from 'react-bootstrap';
-import LeftNav from './LeftNav';
 import RightNav from './RightNav';
+
 
 const NewsLayout = () => {
     return (
@@ -21,6 +21,7 @@ const NewsLayout = () => {
                 </Row>
             </Container>
             <Footer></Footer>
+            <ScrollRestoration />
         </div>
     );
 };

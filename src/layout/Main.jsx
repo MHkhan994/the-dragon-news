@@ -5,6 +5,7 @@ import Footer from '../pages/Shared/Footer/Footer';
 import { Col, Container, Row } from 'react-bootstrap';
 import LeftNav from './LeftNav';
 import RightNav from './RightNav';
+import { ScrollRestoration } from "react-router-dom";
 
 const Main = () => {
     return (
@@ -24,6 +25,7 @@ const Main = () => {
                 </Row>
             </Container>
             <Footer></Footer>
+            <ScrollRestoration />
         </div>
     );
 };
