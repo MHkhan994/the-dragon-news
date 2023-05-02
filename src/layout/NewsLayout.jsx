@@ -4,12 +4,14 @@ import { Outlet, ScrollRestoration } from 'react-router-dom';
 import Footer from '../pages/Shared/Footer/Footer';
 import { Col, Container, Row } from 'react-bootstrap';
 import RightNav from './RightNav';
+import NavigationBar from '../pages/Shared/NavigationBar/NavigationBar';
 
 
 const NewsLayout = () => {
     return (
         <div>
             <Header></Header>
+            <NavigationBar></NavigationBar>
             <Container className='mt-5 pt-5'>
                 <Row>
                     <Col lg={9}>

@@ -6,11 +6,13 @@ import { Col, Container, Row } from 'react-bootstrap';
 import LeftNav from './LeftNav';
 import RightNav from './RightNav';
 import { ScrollRestoration } from "react-router-dom";
+import NavigationBar from '../pages/Shared/NavigationBar/NavigationBar';
 
 const Main = () => {
     return (
         <div>
             <Header></Header>
+            <NavigationBar></NavigationBar>
             <Container className='mt-5 pt-5'>
                 <Row>
                     <Col lg={3}>

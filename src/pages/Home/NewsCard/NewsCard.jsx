@@ -8,7 +8,6 @@ import Rating from 'react-rating';
 const NewsCard = ({ news }) => {
 
     const { title, details, _id, image_url, author, total_view, rating } = news
-    console.log(title);
 
     return (
         <div>

@@ -13,13 +13,12 @@ const LeftNav = () => {
     }, [])
 
 
-    console.log(catagories);
     return (
         <div>
             <h3>All Catagories</h3>
             <div className='d-flex flex-column gap-3 pt-3 fs-5'>
                 {
-                    catagories.map(catagory => <Link className='text-decoration-none px-2 py-2 bg-light text-black' to={`/catagory/${catagory.id}`}>{catagory.name}</Link>)
+                    catagories.map(catagory => <Link key={catagory.id} className='text-decoration-none px-2 py-2 bg-light text-black' to={`/catagory/${catagory.id}`}>{catagory.name}</Link>)
                 }
             </div>
         </div>
